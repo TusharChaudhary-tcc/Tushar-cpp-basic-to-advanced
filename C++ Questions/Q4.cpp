@@ -31,7 +31,5 @@ int main() {
         }
     }
     cout<<"Greatest no. is "<<greatest<<endl;
-    cout<<s[greatest]<<endl;
-
-
+    // cout<<s[greatest]<<endl;
 }
