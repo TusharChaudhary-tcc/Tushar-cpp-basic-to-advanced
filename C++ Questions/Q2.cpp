@@ -10,13 +10,12 @@ long SumOfDigits(long num){
         num= num/10;
         digitSum+=lastDigit;
     }
-    return digitSum;
+    cout<<digitSum;
 }
 int main() {
     int n;
+    cout<<"Enter a number : ";
     cin>>n;
-    cout<<SumOfDigits(n);
-    
+    SumOfDigits(n);
     return 0;
-
 }
