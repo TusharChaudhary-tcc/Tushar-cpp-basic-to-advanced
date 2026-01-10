@@ -12,7 +12,7 @@ int linearSearch(int arr[], int sz, int target){
     return -1;
 }
     int main() {
-        int a[]= {1,3,5,7,5,9,11,13};
+        int a[]= {1,3,5,7,5,9,5,13};
         // int n=sizeof(a);
         int n = 7;
         int goal= 50;
