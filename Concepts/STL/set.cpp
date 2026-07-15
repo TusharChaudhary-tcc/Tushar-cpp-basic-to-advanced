@@ -44,5 +44,30 @@ int main(){
 
 
 
+// ***** There are two common ways to check if an element exists in a set or unordered_set.
+// 1. Using find() (Most common)
+
+     unordered_set<int> s = {10, 20, 30};
+      if (s.find(20) != s.end()) {
+       cout << "Present";
+      }
+      else {
+       cout << "Not Present";
+      }
+
+
+// 2. Using count()
+
+      if (s.count(20)) {
+       cout << "Present"; 
+      } 
+      else {
+       cout << "Not Present";
+      }
+
+// Since a set cannot contain duplicates:
+// s.count(x) returns 1 if present.
+// s.count(x) returns 0 if not present.
+
 
 }

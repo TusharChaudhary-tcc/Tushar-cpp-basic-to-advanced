@@ -55,6 +55,29 @@ int main(){
 // It does not stores in any particular order it has a better complexity O(1) than set in most cases, except some when  collision happens
 
 
+// ***** There are two common ways to check if an element exists in a set or unordered_set.
+// 1. Using find()  (Most common)
+unordered_map<int, int> m3;
+
+m3[10] = 5;
+m3[20] = 8;
+
+if (m3.find(10) != m3.end()) {
+    cout << "Key is present";
+} else {
+    cout << "Key is not present";
+}
      
+// 2. Using count()
+unordered_map<int, int> m;
+
+m[10] = 5;
+m[20] = 8;
+
+if (m.count(10)) {
+    cout << "Key is present";
+} else {
+    cout << "Key is not present";
+}
 
 }
